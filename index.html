@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Study Planner Concept</title>
+</head>
+<body>
+
+    <!-- Main Header using Semantic Layout -->
+    <header>
+        <h1>Smart Study Tracker 📚</h1>
+        <p>A web interface concept mapping out my learning logic.</p>
+        <hr>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section id="task-form-section">
+            <h3>Add New Study Goal</h3>
+            
+            <!-- Form Container -->
+            <form id="planner-form" onsubmit="return false;">
+                <div>
+                    <label for="taskName"><b>Topic / Task Name:</b></label><br>
+                    <input type="text" id="taskName" placeholder="e.g., Learn HTML layout structure" required>
+                </div>
+                
+                <br>
+
+                <div>
+                    <label for="studyHours"><b>Target Study Hours:</b></label><br>
+                    <input type="number" id="studyHours" min="0.5" step="0.5" placeholder="e.g., 2.5" required>
+                </div>
+
+                <br>
+
+                <!-- Action Button -->
+                <button type="submit" id="addTaskBtn">Log Session Details</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- Dynamic Output Display Section -->
+        <section id="display-section">
+            <h3>Active Planner Queue</h3>
+            <p>Tasks logged using our validated algorithmic pipeline will render below:</p>
+            
+            <!-- Container where the list elements append -->
+            <ul id="taskList">
+                <li>Sample Task: Complete W3Schools Review (2.0 hrs) <i>(Placeholder)</i></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer Summary Section -->
+    <footer>
+        <hr>
+        <p><small>Designed with ❤️ by Dua Hassan | Computer Science Portfolio Project</small></p>
+    </footer>
+
+</body>
+</html>
 
